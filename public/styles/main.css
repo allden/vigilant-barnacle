@@ -1,0 +1,55 @@
+:root {
+    --bgr-color: #333;
+    --secondary-color: #555;
+    --primary-color: #32CD83;
+    --hover-color: #2db875;
+}
+
+body {
+    background: var(--bgr-color);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    text-align: center;
+}
+
+.btn {
+    background: var(--primary-color);
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    transition: background .5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--hover-color);
+}
+
+.btn, #message-form {
+    padding: 1rem;
+}
+
+label, input, textarea {
+    margin: .5rem;
+    padding: .5rem 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.message, #message-form, .btn {
+    border-radius: 10px;
+}

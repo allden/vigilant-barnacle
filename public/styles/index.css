@@ -1,0 +1,37 @@
+.message {
+    background: var(--secondary-color);
+    padding: .5rem 1rem;
+}
+
+.message-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message-header p {
+    opacity: 0.5;
+}
+
+.message, .heading, .btn {
+    margin: 1rem;
+}
+
+.name {
+    color: var(--primary-color);
+}
+
+p, .name {
+    margin: .5rem 0;
+}
+
+#new-message {
+    text-align: center;
+    color: #fff;
+}
+
+@media(max-width: 500px) {
+    .message-header {
+        display: block;
+    }
+}

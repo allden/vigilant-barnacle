@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Message Board</title>
+        <link rel="stylesheet" type="text/css" href="../styles/main.css">
+        <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    </head>
+    <body>
+        <h1 class="heading">Message Board</h1>
+        <a href="/new" class="btn" id="new-message">Send A Message</a>
+        <% messages.forEach(messages => { %>
+            <div class="message">
+                <div class="message-header">
+                    <h3 class="name"><%= messages.name %></h3>
+                    <p><%= messages.date %></p>
+                </div>
+                <p><%= messages.message %></p>
+            </div>
+        <% }); %>
+    </body>
+</html>
